@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <link href='https://fonts.googleapis.com/css?family=Anton|Cinzel Decorative' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet'>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+        integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ=="
+        crossorigin="anonymous"></script>
+    <title>Disk Mongly</title>
+    <link rel="stylesheet" href="css/estilo.css">
+
+</head>
+
+<body>
+    <header>
+
+        <h1> <span>MONGLY</span>HOT-DOG</h1>
+
+
+    </header>
+
+
+    <div class="container-sm " id="conteudo">
+        <div class="imagem">
+            <img src="img/img1.jpg" width="100%" height="100%" />
+        </div>
+
+        <div class="conteudo">
+            <!--<h2> CARDÁPIO HOT-DOG <span> TRADICIONAL E CHAPA</span></h2>-->
+            <div class="item-produto">
+                <div class="row item">
+                    <div class="col-3">
+                        <div class="cod-produto">
+                            01
+                        </div>
+                        <div class="valor-produto">
+                            R$ 9,00
+                        </div>
+
+                    </div>
+
+                    <div class=" col-9 descricao">
+                        <p> Dog Tradicional:<br> Pão de leite ninho, molho, queijo, milho, pasta e batata palha.</p>
+                    </div>
+
+                </div>
+                <div class="adicionais">
+                    <div class="row item">
+                        <div class=" col valor-produto">
+
+                        </div>
+                        <div class=" col-10 descricao">
+                            <br>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class=" row add-produto">
+                    <div class="col-8" style="position: relative;">
+                        <span class="valor-parcial">
+                            R$ 0.0 (x0)
+                        </span>
+                        <span class=" botoes">
+                            <button class=" botao bt-soma">+</button>
+                            <button class="botao bt-subtrai">-</button>
+                        </span>
+                    </div>
+                    <fieldset class="container pasta">
+                        <div id="check-pasta">
+                            <label> <strong>Escolha sua pasta no whatsapp, temos de: </strong> </label><br>
+                            <label for="" type="text" id="alho" name="alho" value="alho" class="pst"></label>
+                            <label for="alho">Alho/</label>
+                            <label id="atum" name="atum" class="pst">
+                                <label for="atum">Atum/</label>
+                                <label id="azeitona" name="azeitona" class="pst">
+                                    <label for="azeitona">Azeitona/</label>
+                                    <label id="bacon" name="bacon" class="pst">
+                                        <label for="bacon">Bacon</label>
+
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button id="enviar" onclick="enviar"> <i class="fab fa-whatsapp"></i>ENVIAR</button>
+
+    <div id="modal-enviar">
+        <div class="titulo-modal">
+            PEDIDO:<span class="close" id="fechar-modal"> &times;</span>
+
+        </div>
+        <div class="body-modal-whrapper">
+            <div class="corpo-modal">
+                Escolha pelo menos um produto.
+
+            </div>
+        </div>
+        <div class="rodape-modal" id="rodape-modal">
+
+
+        </div>
+
+    </div>
+    <footer class="footer text-center">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-4">
+                    <h3>LOCALIZAÇÃO:</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239.83583925570045!2d-48.01482254472641!3d-15.88949555007678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a2d3abe2e9545%3A0xcdad436fde39367!2sPonto%20de%20Encontro!5e0!3m2!1spt-BR!2sbr!4v1620332490795!5m2!1spt-BR!2sbr"
+                        width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Web:</h4>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/search/top?q=Mongly%20HOT%20DOG" target="_blank"><i class="fab fa-fw fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1"  href="https://www.instagram.com/cmongly/" target="_blank"> <i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/Emersonpix" target="_blank"><i class="fab fa-github-alt"></i></a>
+                    
+                </div>
+               <div class="col-lg-4 mb-5 mb-lg-0"> <p>Desenvolvido no Curso de Front-end senai-df 
+                Aluno: Emereson de Matos <br>
+                Professor: Luiz Felipe</p>
+            </div>
+            </div>
+            
+        </div>
+        <div class="criador">© Copyright 2021 Emerson de Matos - All Rights Reserved</div> 
+    </footer>
+
+
+
+    <script src="js/itens.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+
+</html>
